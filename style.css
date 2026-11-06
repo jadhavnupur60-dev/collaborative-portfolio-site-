@@ -1,0 +1,217 @@
+
+/* 🌈 COLORFUL PORTFOLIO WEBSITE */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #fff9f5;
+    color: #34304a;
+    line-height: 1.7;
+}
+
+/* 🎨 NAVIGATION */
+header {
+    background: linear-gradient(110deg, #7b2ff7, #f107a3, #ff7e5f);
+    color: white;
+    padding: 22px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    box-shadow: 0 5px 20px rgba(123,47,247,0.2);
+}
+
+header h1 {
+    font-size: 27px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #fff176;
+    transform: translateY(-3px);
+}
+
+/* 🏠 HOME */
+#home {
+    min-height: 430px;
+    padding: 90px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(
+        135deg,
+        #ffe0f0,
+        #e3dcff,
+        #d5f9ff,
+        #fff1c9
+    );
+}
+
+#home h2 {
+    font-size: clamp(30px, 5vw, 48px);
+    color: #7728c7;
+    margin-bottom: 15px;
+}
+
+#home p {
+    font-size: 18px;
+    color: #51416c;
+    margin: 5px;
+    max-width: 700px;
+}
+
+/* 🌸 ABOUT */
+#about {
+    padding: 75px 20px;
+    text-align: center;
+    background: linear-gradient(120deg, #fff0f6, #fff9df);
+}
+
+#about h2 {
+    color: #e83e8c;
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+#about p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 18px;
+    color: #62566f;
+}
+
+/* 💎 CONTACT */
+#contact {
+    padding: 75px 20px;
+    text-align: center;
+    background: linear-gradient(
+        135deg,
+        #dff9fb,
+        #eee3ff,
+        #ffe4ec
+    );
+}
+
+#contact h2 {
+    color: #673ab7;
+    font-size: 34px;
+}
+
+form {
+    max-width: 520px;
+    margin: 30px auto;
+    padding: 35px;
+    background: white;
+    border-radius: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    box-shadow: 0 12px 35px rgba(113,75,180,0.18);
+    border-top: 6px solid #f45b9a;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #e8dcff;
+    border-radius: 12px;
+    font-size: 15px;
+    font-family: inherit;
+    background: #fffaff;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #a855f7;
+    box-shadow: 0 0 10px rgba(168,85,247,0.2);
+}
+
+textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+/* 🚀 SUBMIT BUTTON */
+button {
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(100deg, #7b2ff7, #f107a3, #ff7e5f);
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(241,7,163,0.25);
+}
+
+/* 💌 SUCCESS MESSAGE */
+#response {
+    margin-top: 20px;
+    color: #14966b;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+/* 🌟 FOOTER */
+footer {
+    background: linear-gradient(110deg, #302b63, #7b2ff7, #e83e8c);
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+footer p {
+    color: white;
+}
+
+/* 📱 MOBILE RESPONSIVE */
+@media (max-width: 600px) {
+    header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    section {
+        padding: 50px 15px;
+    }
+
+    form {
+        padding: 22px;
+    }
+
+    #home h2 {
+        font-size: 30px;
+    }
+}
